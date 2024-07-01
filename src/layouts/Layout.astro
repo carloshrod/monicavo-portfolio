@@ -19,7 +19,7 @@ const { title } = Astro.props;
 		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class='bg-stone-100 text-stone-700'>
+	<body class='bg-stone-100 text-stone-800'>
 		<Navbar />
 		<main>
 			<slot />
@@ -37,9 +37,8 @@ const { title } = Astro.props;
 	}
 
 	main {
-		min-height: 100vh;
+		min-height: 200vh;
 		margin: auto;
-		margin-top: 100px;
 		font-size: 24px;
 		line-height: 1.6;
 	}
@@ -48,7 +47,9 @@ const { title } = Astro.props;
 	h3 {
 		font-family: 'EB Garamond Variable', serif;
 	}
-
+	h1 {
+		font-size: 70px;
+	}
 	h2 {
 		font-size: 24px;
 	}
