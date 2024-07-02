@@ -1,0 +1,57 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<footer
+	class='h-[100px] max-w-5xl flex justify-between items-center mx-auto font-semibold'
+>
+	<span>©{new Date().getFullYear()} MonicaVo | All Rights Reserved</span>
+	<section class='flex flex-row gap-4'>
+		<a
+			class='relative block w-9 h-9'
+			href='https://www.instagram.com'
+			target='_blank'
+			rel='noopener noreferrer'
+		>
+			<Image
+				class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 hover:opacity-0'
+				src='/icons/instagram-bw.svg'
+				width='36'
+				height='36'
+				loading='eager'
+				alt='Instagram icon'
+			/>
+			<Image
+				src='/icons/instagram-color.svg'
+				width='36'
+				height='36'
+				loading='eager'
+				alt='Instagram icon'
+				class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 hover:opacity-100'
+			/>
+		</a>
+		<a
+			class='relative block w-9 h-9'
+			href='https://www.tiktok.com'
+			target='_blank'
+			rel='noopener noreferrer'
+		>
+			<Image
+				class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 hover:opacity-0'
+				src='/icons/tiktok-bw.svg'
+				width='36'
+				height='36'
+				loading='eager'
+				alt='Tiktok icon'
+			/>
+			<Image
+				class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 hover:opacity-100'
+				src='/icons/tiktok-color.svg'
+				width='36'
+				height='36'
+				loading='eager'
+				alt='Tiktok icon'
+			/>
+		</a>
+	</section>
+</footer>
