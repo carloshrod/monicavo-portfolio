@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+interface Props {
+	title: string;
+	slug: string;
+}
+
+const { title, slug } = Astro.props;
+---
+
+<Layout title={title}>
+	<section class='pt-[100px]'>
+		<h1 class='text-center'>
+			<span class='border-b border-b-4 border-stone-800'>Portfolio</span>
+		</h1>
+		<div class='w-[240px] flex mx-auto text-center'>
+			<a
+				href='/portfolio/sessions'
+				class={`flex-1 border-r border-1 border-stone-800 ${slug === 'sessions' ? 'font-semibold' : ''}`}
+				>Sessions</a
+			>
+			<a
+				href='/portfolio/editorial'
+				class={`flex-1 border-l border-1 border-stone-800 ${slug === 'editorial' ? 'font-semibold' : ''}`}
+				>Editorial</a
+			>
+		</div>
+		<div class='flex flex-wrap mt-2'>
+			<slot />
+		</div>
+	</section>
+</Layout>
