@@ -17,12 +17,12 @@ const { title, slug } = Astro.props;
 		<div class='w-[240px] flex mx-auto text-center'>
 			<a
 				href='/portfolio/sessions'
-				class={`flex-1 border-r border-1 border-stone-800 ${slug === 'sessions' ? 'font-semibold' : ''}`}
+				class={`flex-1 border-r border-1 border-stone-800 ${slug === 'sessions' ? 'font-semibold bg-stone-200' : ''}`}
 				>Sessions</a
 			>
 			<a
 				href='/portfolio/editorial'
-				class={`flex-1 border-l border-1 border-stone-800 ${slug === 'editorial' ? 'font-semibold' : ''}`}
+				class={`flex-1 border-l border-1 border-stone-800 ${slug === 'editorial' ? 'font-semibold bg-stone-200' : ''}`}
 				>Editorial</a
 			>
 		</div>
