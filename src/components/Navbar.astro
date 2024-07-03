@@ -1,9 +1,19 @@
+---
+import { Image } from 'astro:assets';
+---
+
 <header class='fixed top-0 left-0 w-full px-4 z-50 sm'>
 	<nav
-		class='h-[100px] max-w-5xl mx-auto flex justify-between items-center px-4'
+		class='h-[140px] max-w-5xl mx-auto flex justify-between items-center px-4'
 	>
 		<a href='/'>
-			<h2 class='font-bold'>MónicaVO</h2>
+			<Image
+				src='/monicavo-logo.png'
+				width='162'
+				height='100'
+				loading='eager'
+				alt='Logo Mónica Juvaror'
+			/>
 		</a>
 		<div
 			class='flex flex-col gap-1 min-[400px]:flex-row min-[400px]:gap-10 sm:gap-10'
