@@ -1,22 +1,25 @@
 ---
 import { Image } from 'astro:assets';
-import PortfolioLayout from '../../layouts/PortfolioLayout.astro';
-import data from '../../../data.json';
+import PortfolioLayout from '../../../layouts/PortfolioLayout.astro';
+import data from '../../../../sessions.json';
 ---
 
 <PortfolioLayout title='MÓNICA JUVAROR - Portfolio Sessions' slug='sessions'>
 	{
 		data.map(item => (
-			<div class='hover imgContainer w-full sm:w-1/2 lg:w-1/4 p-1 cursor-pointer'>
+			<a
+				href={`/portfolio/sessions/${item.slug}`}
+				class='hover imgContainer w-full sm:w-1/2 lg:w-1/4 p-1 cursor-pointer'
+			>
 				<Image
 					class='w-full object-cover'
-					src={item.url}
+					src={item.cover}
 					width='2000'
 					height='1393'
 					loading='eager'
 					alt={item.slug}
 				/>
-			</div>
+			</a>
 		))
 	}
 </PortfolioLayout>

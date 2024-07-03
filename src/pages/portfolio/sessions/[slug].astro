@@ -1,0 +1,42 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import sessions from '../../../../sessions.json';
+import { Image } from 'astro:assets';
+
+export function getStaticPaths() {
+	return sessions.map(session => ({
+		params: { slug: session.slug },
+		props: { session: session?.name, pics: session?.pics },
+	}));
+}
+
+const { session, pics } = Astro.props;
+console.log(pics);
+---
+
+<Layout title={`${session} Session`}>
+	<section class='pb-10'>
+		<h2 class='pt-[140px] text-center'>
+			<span class='border-b border-b-4 border-[#040404]'>{session}</span>
+		</h2>
+		<div class='grid grid-cols-2 auto-rows-auto mt-4'>
+			{
+				pics?.map((item, index) => (
+					<>
+						{index % 2 !== 0 && <div />}
+						<div class={`${index % 2 === 0 ? 'col-start-1' : 'col-start-2'}`}>
+							<Image
+								class='w-full object-cover'
+								src={item}
+								width='2000'
+								height='1393'
+								loading={`${index < 1 ? 'eager' : 'lazy'}`}
+								alt={`${session} ${index}`}
+							/>
+						</div>
+					</>
+				))
+			}
+		</div>
+	</section>
+</Layout>

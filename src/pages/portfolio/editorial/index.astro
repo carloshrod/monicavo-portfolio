@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import PortfolioLayout from '../../layouts/PortfolioLayout.astro';
-import data from '../../../data.json';
+import PortfolioLayout from '../../../layouts/PortfolioLayout.astro';
+import data from '../../../../sessions.json';
 ---
 
 <PortfolioLayout title='MÓNICA JUVAROR - Portfolio Editorial' slug='editorial'>
@@ -10,7 +10,7 @@ import data from '../../../data.json';
 			<div class='hover imgContainer w-full md:w-1/2 lg:w-1/4 p-1 cursor-pointer'>
 				<Image
 					class='w-full object-cover'
-					src={item.url}
+					src={item.cover}
 					width='2000'
 					height='1393'
 					loading='eager'
