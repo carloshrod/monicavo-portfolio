@@ -4,19 +4,19 @@ import editorials from '../../../../editorials.json';
 import { Image } from 'astro:assets';
 
 export function getStaticPaths() {
-	return editorials.map(session => ({
-		params: { slug: session.slug },
-		props: { session: session?.name, pics: session?.pics },
+	return editorials.map(editorial => ({
+		params: { slug: editorial.slug },
+		props: { editorial: editorial?.name, pics: editorial?.pics },
 	}));
 }
 
-const { session, pics } = Astro.props;
+const { editorial, pics } = Astro.props;
 ---
 
-<Layout title={`${session} Session`}>
+<Layout title={`${editorial} Editorial`}>
 	<section class='max-w-5xl mx-auto pb-10'>
-		<h2 class='text-center'>
-			<span class='border-b border-b-4 border-[#040404]'>{session}</span>
+		<h2 class='pt-[140px] text-center'>
+			<span class='border-b border-b-4 border-[#040404]'>{editorial}</span>
 		</h2>
 		<div class='flex flex-wrap mt-4'>
 			{
@@ -33,7 +33,7 @@ const { session, pics } = Astro.props;
 								src={item}
 								inferSize={true}
 								loading={`${index < 4 ? 'eager' : 'lazy'}`}
-								alt={`${session} ${index}`}
+								alt={`${editorial} ${index}`}
 							/>
 						</div>
 					</>
