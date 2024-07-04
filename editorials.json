@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Esra",
+    "slug": "esra",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945467/monicavo-portfolio/portada-es_guuexr.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1719945467/monicavo-portfolio/portada-es_guuexr.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1719945467/monicavo-portfolio/portada-es_guuexr.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720032844/esra-101_zrrcu9.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720032844/esra-101_zrrcu9.jpg"
+    ]
+  },
+  {
+    "name": "Hard",
+    "slug": "hard",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/portada-hs_v4imrk.jpg"
+  },
+  {
+    "slug": "pic-3",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/portada-mf_xvmerk.jpg"
+  },
+  {
+    "slug": "pic-4",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945535/monicavo-portfolio/portada-op_ycqmxy.jpg"
+  }
+]
