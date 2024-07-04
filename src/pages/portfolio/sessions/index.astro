@@ -12,11 +12,9 @@ import data from '../../../../sessions.json';
 				class='hover imgContainer w-full sm:w-1/2 lg:w-1/4 p-1 cursor-pointer'
 			>
 				<Image
-					class='w-full object-cover'
+					class='w-full object-cover dynamicLoading'
 					src={item.cover}
-					width='2000'
-					height='1393'
-					loading='eager'
+					inferSize={true}
 					alt={item.slug}
 				/>
 			</a>
@@ -36,3 +34,25 @@ import data from '../../../../sessions.json';
 		filter: grayscale(0);
 	}
 </style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const dynamicImages = document.querySelectorAll('.dynamicLoading');
+
+		function updateImageLoading() {
+			const viewportHeight = window.innerHeight;
+			dynamicImages.forEach(img => {
+				const rect = img.getBoundingClientRect();
+				if (rect.top < viewportHeight) {
+					img.setAttribute('loading', 'eager');
+				} else {
+					img.setAttribute('loading', 'lazy');
+				}
+			});
+		}
+
+		updateImageLoading();
+
+		window.addEventListener('resize', updateImageLoading);
+	});
+</script>

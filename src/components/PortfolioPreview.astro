@@ -14,8 +14,7 @@ import data from '../../sessions.json';
 					<Image
 						class='w-full object-cover'
 						src={item.cover}
-						width='2000'
-						height='1393'
+						inferSize={true}
 						loading='lazy'
 						alt={item.slug}
 					/>
@@ -33,11 +32,6 @@ import data from '../../sessions.json';
 </section>
 
 <style lang='scss'>
-	.hover.imgContainer img {
-		-webkit-filter: grayscale(0);
-		filter: grayscale(0);
-	}
-
 	.hover.imgContainer:hover img {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);

@@ -7,16 +7,17 @@ import data from '../../../../sessions.json';
 <PortfolioLayout title='MÓNICA JUVAROR - Portfolio Editorial' slug='editorial'>
 	{
 		data.map(item => (
-			<div class='hover imgContainer w-full md:w-1/2 lg:w-1/4 p-1 cursor-pointer'>
+			<a
+				href={`/portfolio/editorial/${item.slug}`}
+				class='hover imgContainer w-full md:w-1/2 lg:w-1/4 p-1 cursor-pointer'
+			>
 				<Image
-					class='w-full object-cover'
+					class='w-full object-cover dynamicLoading'
 					src={item.cover}
-					width='2000'
-					height='1393'
-					loading='eager'
+					inferSize={true}
 					alt={item.slug}
 				/>
-			</div>
+			</a>
 		))
 	}
 </PortfolioLayout>
@@ -33,3 +34,27 @@ import data from '../../../../sessions.json';
 		filter: grayscale(0);
 	}
 </style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const dynamicImages = document.querySelectorAll('.dynamicLoading');
+
+		function updateImageLoading() {
+			const viewportHeight = window.innerHeight;
+			dynamicImages.forEach(img => {
+				const rect = img.getBoundingClientRect();
+				if (rect.top < viewportHeight) {
+					img.setAttribute('loading', 'eager');
+				} else {
+					img.setAttribute('loading', 'lazy');
+				}
+			});
+		}
+
+		// Inicializa la función al cargar la página
+		updateImageLoading();
+
+		// Actualiza al cambiar el tamaño de la ventana
+		window.addEventListener('resize', updateImageLoading);
+	});
+</script>
