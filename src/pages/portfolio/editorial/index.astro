@@ -12,7 +12,8 @@ import data from '../../../../sessions.json';
 				class='hover imgContainer w-full md:w-1/2 lg:w-1/4 p-1 cursor-pointer'
 			>
 				<Image
-					class='w-full object-cover dynamicLoading'
+					class='w-full object-cover'
+					id='dynamicLoading'
 					src={item.cover}
 					inferSize={true}
 					alt={item.slug}
@@ -35,26 +36,4 @@ import data from '../../../../sessions.json';
 	}
 </style>
 
-<script>
-	document.addEventListener('DOMContentLoaded', () => {
-		const dynamicImages = document.querySelectorAll('.dynamicLoading');
-
-		function updateImageLoading() {
-			const viewportHeight = window.innerHeight;
-			dynamicImages.forEach(img => {
-				const rect = img.getBoundingClientRect();
-				if (rect.top < viewportHeight) {
-					img.setAttribute('loading', 'eager');
-				} else {
-					img.setAttribute('loading', 'lazy');
-				}
-			});
-		}
-
-		// Inicializa la función al cargar la página
-		updateImageLoading();
-
-		// Actualiza al cambiar el tamaño de la ventana
-		window.addEventListener('resize', updateImageLoading);
-	});
-</script>
+<script src='/src/utils/dynamicLoading.ts'></script>

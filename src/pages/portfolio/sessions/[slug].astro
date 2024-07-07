@@ -22,19 +22,20 @@ const { session, pics } = Astro.props;
 			{
 				pics?.map((item, index) => (
 					<>
+						{index % 2 === 0 && <div />}
+						<Image
+							class='w-full object-cover'
+							id='dynamicLoading'
+							src={item}
+							inferSize={true}
+							alt={`${session} ${index}`}
+						/>
 						{index % 2 !== 0 && <div />}
-						<div class={`${index % 2 === 0 ? 'col-start-1' : 'col-start-2'}`}>
-							<Image
-								class='w-full object-cover'
-								src={item}
-								inferSize={true}
-								loading={`${index < 1 ? 'eager' : 'lazy'}`}
-								alt={`${session} ${index}`}
-							/>
-						</div>
 					</>
 				))
 			}
 		</div>
 	</section>
 </Layout>
+
+<script src='/src/utils/dynamicLoading.ts'></script>
