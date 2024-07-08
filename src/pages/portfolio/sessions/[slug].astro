@@ -1,7 +1,8 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import sessions from '../../../../sessions.json';
 import { Image } from 'astro:assets';
+import Layout from '../../../layouts/Layout.astro';
+import GoBack from '../../../components/GoBack.astro';
+import sessions from '../../../../sessions.json';
 
 export function getStaticPaths() {
 	return sessions.map(session => ({
@@ -14,10 +15,16 @@ const { session, pics } = Astro.props;
 ---
 
 <Layout title={`${session} Session`}>
-	<section class='max-w-5xl mx-auto pb-10'>
-		<h2 class='pt-[140px] text-center'>
-			<span class='border-b border-b-4 border-[#040404]'>{session}</span>
-		</h2>
+	<section class='mt-[140px] max-w-5xl mx-auto pb-10'>
+		<div class='relative flex justify-center items-center'>
+			<GoBack
+				class='absolute left-1 h-8 w-8 p-1 bg-stone-200 rounded-full'
+				path='/portfolio/sessions'
+			/>
+			<h2 class='text-center'>
+				<span class='border-b border-b-4 border-[#040404]'>{session}</span>
+			</h2>
+		</div>
 		<div class='grid grid-cols-2 auto-rows-auto mt-4'>
 			{
 				pics?.map((item, index) => (

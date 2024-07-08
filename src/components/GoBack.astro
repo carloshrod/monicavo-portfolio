@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+
+const { path } = Astro.props;
+---
+
+<a {...Astro.props} href={path}>
+	<Image
+		class='h-full w-full'
+		src='/public/icons/back.svg'
+		width='30'
+		height='30'
+		loading='eager'
+		alt='Back icon'
+	/>
+</a>
