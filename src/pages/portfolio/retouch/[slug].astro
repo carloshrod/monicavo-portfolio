@@ -2,19 +2,19 @@
 import { Image } from 'astro:assets';
 import Layout from '../../../layouts/Layout.astro';
 import GoBack from '../../../components/GoBack.astro';
-import retouch from '../../../../retouch.json';
+import data from '../../../../retouch.json';
 
 export function getStaticPaths() {
-	return retouch.map(item => ({
+	return data.map(item => ({
 		params: { slug: item.slug },
-		props: { editorial: item?.name, pics: item?.pics },
+		props: { retouch: item?.name, pics: item?.pics },
 	}));
 }
 
-const { editorial, pics } = Astro.props;
+const { retouch, pics } = Astro.props;
 ---
 
-<Layout title={`${editorial} Editorial`}>
+<Layout title={`${retouch} Retouch`}>
 	<section class='mt-[140px] max-w-5xl mx-auto pb-10'>
 		<div class='relative flex justify-center items-center'>
 			<GoBack
@@ -22,7 +22,7 @@ const { editorial, pics } = Astro.props;
 				path='/portfolio/retouch'
 			/>
 			<h2 class='text-center'>
-				<span class='border-b border-b-4 border-[#040404]'>{editorial}</span>
+				<span class='border-b border-b-4 border-[#040404]'>{retouch}</span>
 			</h2>
 		</div>
 		<div class='flex flex-col mt-4 sm:flex-row'>
@@ -38,7 +38,7 @@ const { editorial, pics } = Astro.props;
 								src={item}
 								inferSize={true}
 								loading={`${index < 4 ? 'eager' : 'lazy'}`}
-								alt={`${editorial} ${index}`}
+								alt={`${retouch} ${index}`}
 							/>
 						</div>
 					</>
