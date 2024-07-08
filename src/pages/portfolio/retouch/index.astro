@@ -1,14 +1,14 @@
 ---
 import { Image } from 'astro:assets';
 import PortfolioLayout from '../../../layouts/PortfolioLayout.astro';
-import data from '../../../../editorials.json';
+import data from '../../../../retouch.json';
 ---
 
-<PortfolioLayout title='MÓNICA JUVAROR - Portfolio Editorial' slug='editorial'>
+<PortfolioLayout title='MÓNICA JUVAROR - Portfolio Editorial' slug='retouch'>
 	{
 		data.map(item => (
 			<a
-				href={`/portfolio/editorial/${item.slug}`}
+				href={`/portfolio/retouch/${item.slug}`}
 				class='hover imgContainer w-full md:w-1/2 lg:w-1/4 p-1 cursor-pointer'
 			>
 				<Image
