@@ -18,13 +18,11 @@ const { editorial, pics } = Astro.props;
 		<h2 class='pt-[140px] text-center'>
 			<span class='border-b border-b-4 border-[#040404]'>{editorial}</span>
 		</h2>
-		<div class='flex flex-wrap mt-4'>
+		<div class='flex flex-col mt-4 sm:flex-row'>
 			{
 				pics?.map((item, index) => (
 					<>
-						<div
-							class={`relative w-1/2 px-1 py-2 ${index % 2 === 0 ? 'imgContainer' : ''}`}
-						>
+						<div class='relative px-1 py-2 sm:w-1/2'>
 							<span class='absolute bottom-4 right-6 z-50 text-xl font-medium'>
 								{index % 2 === 0 ? 'Before' : 'After'}
 							</span>
@@ -46,13 +44,6 @@ const { editorial, pics } = Astro.props;
 <style lang='scss'>
 	span {
 		font-family: 'EB Garamond Variable';
-	}
-	.imgContainer {
-		img {
-			-webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-			-webkit-transition: 0.3s ease-in-out;
-			transition: 0.3s ease-in-out;
-		}
+		text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 	}
 </style>
