@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 
 <header class='fixed top-0 left-0 w-full z-10'>
 	<nav
-		class='h-[140px] max-w-5xl mx-auto flex justify-between items-center px-4'
+		class='h-[140px] max-w-5xl mx-auto flex justify-between items-center px-6'
 	>
 		<a href='/'>
 			<Image
@@ -24,6 +24,16 @@ import { Image } from 'astro:assets';
 				<span
 					class='absolute inset-0 font-semibold group-hover:font-bold transition-all duration-200 block'
 					>PORTFOLIO</span
+				>
+			</a>
+			<a
+				href='/about-me'
+				class='relative inline-block max-[399px]:text-right group'
+			>
+				<span class='invisible font-bold block'>ABOUT ME</span>
+				<span
+					class='absolute inset-0 font-semibold group-hover:font-bold transition-all duration-200 block'
+					>ABOUT ME</span
 				>
 			</a>
 			<span

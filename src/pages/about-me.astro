@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='About me'>
+	<section class='mt-[140px] max-w-5xl mx-auto px-4 pb-10'>
+		<h2 class='text-center mb-4'>
+			<span class='border-b border-b-4 border-[#040404]'>About Me</span>
+		</h2>
+		<section class='lg:flex lg:items-center lg:flex-row-reverse lg:gap-8'>
+			<figure class='max-w-[500px] lg:w-1/2 mx-auto'>
+				<Image
+					class='shadow-[8px_8px_12px_rgba(0,0,0,0.3)]'
+					src='/public/aboutme-img.jpg'
+					width='1200'
+					height='1500'
+					loading='eager'
+					alt='Mónica Juvaror'
+				/>
+			</figure>
+			<div class='mt-8 lg:mt-0 lg:w-1/2'>
+				<p class='mb-4'>
+					Hello! I am Móni, a passionate photographer born in Bogotá, Colombia.
+					Over the past six years, I have lived out one of my greatest passions:
+					traveling the world. My adventures led me to capture unique moments
+					and breathtaking landscapes as an amateur, which ignited a deep love
+					for photography in me and motivated me to turn professional. Two years
+					ago, I decided to focus my career on portrait photography, exploring
+					both studio work and outdoor shoots. While I enjoy the precision and
+					control of studio work, my true passion lies in outdoor photography,
+					where nature and natural light play a crucial role in creating unique
+					and authentic images.
+				</p>
+				<p class='mb-4'>
+					Currently, I am specializing in artistic portraiture, always striving
+					to capture the essence and personality of each person who stands
+					before my camera. Additionally, I have expanded my knowledge in
+					fashion photography, allowing me to blend the art of portraiture with
+					elegance and style. Every photograph is an opportunity to tell a
+					story, and my goal is to make each session a memorable and enriching
+					experience for my clients.
+				</p>
+				<p class='mb-4'>
+					If you would like me to work on your photography project, feel free to
+					contact me.
+				</p>
+				<a href='tel:+15126509087' class='block font-semibold italic mb-2'
+					>Phone: +1 5126509087
+				</a>
+				<a
+					href='mailto:monicajuvaror@gmail.com'
+					class='block font-semibold italic'>Email: monicajuvaror@gmail.com</a
+				>
+			</div>
+		</section>
+	</section>
+</Layout>
