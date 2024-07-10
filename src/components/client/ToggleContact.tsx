@@ -7,6 +7,7 @@ const ToggleContact = () => {
 	return (
 		<button
 			className='relative inline-block cursor-pointer group border border-2 border-stone-950 px-4 text-center rounded'
+			aria-label='Toggle contact drawer'
 			onClick={() => isContactOpen.set(!$isContactOpen)}
 		>
 			<span className='invisible font-bold block'>CONTACT</span>

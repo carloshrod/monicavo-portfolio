@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { useStore } from '@nanostores/react';
 import { isContactOpen } from '../../store';
-import IconClose from './IconClose';
+import ButtonClose from './ButtonClose';
 
 const DrawerContact = ({ children }: { children: ReactNode }) => {
 	const $isContactOpen = useStore(isContactOpen);
@@ -25,7 +25,7 @@ const DrawerContact = ({ children }: { children: ReactNode }) => {
 				className={`absolute end-0 w-[320px] h-screen pt-[20px] flex flex-col items-center bg-stone-100 rounded transition-transform duration-500 ${navClass}`}
 				id='menu'
 			>
-				<IconClose
+				<ButtonClose
 					className='absolute top-3 start-3 h-5 w-5 cursor-pointer'
 					onClick={() => isContactOpen.set(false)}
 				/>

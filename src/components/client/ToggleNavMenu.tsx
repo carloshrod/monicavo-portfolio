@@ -8,6 +8,7 @@ const ToggleNavMenu = () => {
 		<button
 			className='self-end cursor-pointer min-[768px]:hidden'
 			type='button'
+			aria-label='Toggle menu navigation'
 			onClick={() => isNavMenuOpen.set(!$isNavMenuOpen)}
 		>
 			<svg

@@ -1,7 +1,7 @@
 import { useStore } from '@nanostores/react';
 import { isNavMenuOpen } from '../../store';
 import type { ReactNode } from 'react';
-import IconClose from './IconClose';
+import ButtonClose from './ButtonClose';
 
 const DrawerNavMenu = ({ children }: { children: ReactNode }) => {
 	const $isNavMenuOpen = useStore(isNavMenuOpen);
@@ -25,7 +25,7 @@ const DrawerNavMenu = ({ children }: { children: ReactNode }) => {
 				className={`relative w-[230px] h-screen pt-[20px] flex flex-col items-center bg-stone-100 md:hidden rounded transition-transform duration-500 ${navClass}`}
 				id='menu'
 			>
-				<IconClose
+				<ButtonClose
 					className='absolute top-3 end-3 h-5 w-5 cursor-pointer'
 					onClick={() => isNavMenuOpen.set(false)}
 				/>

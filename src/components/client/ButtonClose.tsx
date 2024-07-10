@@ -3,9 +3,9 @@ interface IconCloseProps {
 	onClick: () => void;
 }
 
-const IconClose = (props: IconCloseProps) => {
+const ButtonClose = (props: IconCloseProps) => {
 	return (
-		<button {...props}>
+		<button {...props} type='button' aria-label='Close drawer'>
 			<svg
 				className='h-full w-full'
 				xmlns='http://www.w3.org/2000/svg'
@@ -19,4 +19,4 @@ const IconClose = (props: IconCloseProps) => {
 	);
 };
 
-export default IconClose;
+export default ButtonClose;
