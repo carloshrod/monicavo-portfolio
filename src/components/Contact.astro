@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<section class='flex flex-col items-center gap-4 mt-8'>
+	<h3 class='mb-6'>
+		<span class='border-b border-b-4 border-[#040404]'> Contact </span>
+	</h3>
+	<a href='tel:+15126509087' class='block text-sm font-semibold'>
+		Phone: +1 5126509087
+	</a>
+	<a href='mailto:monicajuvaror@gmail.com' class='block text-sm font-semibold'>
+		Email: monicajuvaror@gmail.com
+	</a>
+	<a
+		class='relative block w-9 h-9'
+		href='https://www.instagram.com/monicajuvaror/'
+		target='_blank'
+		rel='noopener noreferrer'
+	>
+		<Image
+			class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 hover:opacity-0'
+			src='/icons/instagram-bw.svg'
+			width='36'
+			height='36'
+			loading='eager'
+			alt='Instagram icon'
+		/>
+		<Image
+			src='/icons/instagram-color.svg'
+			width='36'
+			height='36'
+			loading='eager'
+			alt='Instagram icon'
+			class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 hover:opacity-100'
+		/>
+	</a>
+</section>

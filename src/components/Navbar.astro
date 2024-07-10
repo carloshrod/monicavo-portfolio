@@ -1,8 +1,11 @@
 ---
+import Logo from './Logo.astro';
 import ToggleNavMenu from './client/ToggleNavMenu';
 import NavLinks from './client/NavLinks';
-import Drawer from './client/Drawer';
-import Logo from './Logo.astro';
+import ToggleContact from './client/ToggleContact';
+import DrawerNavMenu from './client/DrawerNavMenu';
+import DrawerContact from './client/DrawerContact';
+import Contact from './Contact.astro';
 ---
 
 <header class='fixed top-0 left-0 w-full z-10'>
@@ -15,18 +18,15 @@ import Logo from './Logo.astro';
 			<NavLinks
 				className='flex max-md:flex-col gap-y-2 gap-x-8 max-md:hidden'
 			/>
-			<span
-				class='relative inline-block cursor-pointer group border border-2 border-stone-950 px-4 text-center rounded'
-			>
-				<span class='invisible font-bold block'>CONTACT</span>
-				<span
-					class='absolute inset-0 font-semibold group-hover:font-bold transition-all duration-200 block'
-					>CONTACT</span
-				>
-			</span>
+			<ToggleContact client:load />
 		</div>
 	</nav>
-	<Drawer client:load>
+	<DrawerNavMenu client:load>
 		<Logo />
-	</Drawer>
+		<NavLinks className='flex flex-col gap-8 mt-12' />
+	</DrawerNavMenu>
+	<DrawerContact client:load>
+		<Logo />
+		<Contact />
+	</DrawerContact>
 </header>
