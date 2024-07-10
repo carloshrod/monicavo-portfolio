@@ -21,7 +21,7 @@ const { retouch, pics } = Astro.props;
 				class='absolute left-4 h-8 w-8 p-1 bg-stone-200 rounded-full'
 				path='/portfolio/retouch'
 			/>
-			<h2 class='text-center'>
+			<h2 class='text-center' transition:animate='slide'>
 				<span class='border-b border-b-4 border-[#040404]'>{retouch}</span>
 			</h2>
 		</div>
@@ -41,6 +41,7 @@ const { retouch, pics } = Astro.props;
 								inferSize={true}
 								loading={`${index < 4 ? 'eager' : 'lazy'}`}
 								alt={`${retouch} ${index}`}
+								transition:animate='slide'
 							/>
 						</div>
 					</>

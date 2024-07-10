@@ -21,7 +21,7 @@ const { session, pics } = Astro.props;
 				class='absolute left-4 h-8 w-8 p-1 bg-stone-200 rounded-full'
 				path='/portfolio/sessions'
 			/>
-			<h2 class='text-center'>
+			<h2 class='text-center' transition:animate='slide'>
 				<span class='border-b border-b-4 border-[#040404]'>{session}</span>
 			</h2>
 		</div>
@@ -35,6 +35,7 @@ const { session, pics } = Astro.props;
 							src={item}
 							inferSize={true}
 							alt={`${session} ${index}`}
+							transition:animate='slide'
 						/>
 					</>
 				))
