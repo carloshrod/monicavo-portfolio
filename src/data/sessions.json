@@ -2,25 +2,61 @@
   {
     "name": "Esra",
     "slug": "esra",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945467/monicavo-portfolio/portada-es_guuexr.jpg",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/portada-es_zctnwr.jpg",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1719945467/monicavo-portfolio/portada-es_guuexr.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720032844/esra-101_zrrcu9.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720032844/esra-104_mnylns.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720032844/esra-105_wgzcd3.jpg"
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/portada-es_zctnwr.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-101_whknvw.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-104_zz8swt.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-105_iojtjr.jpg"
     ]
   },
   {
     "name": "Hard",
     "slug": "hard",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/portada-hs_v4imrk.jpg"
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720638443/monicavo-portfolio/hard-session/Hard_Beauty__jwe1i1.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720638443/monicavo-portfolio/hard-session/Hard_Beauty_2_bngikt.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720638444/monicavo-portfolio/hard-session/Hard_Beauty_3_nc1kdj.jpg"
+    ]
   },
   {
-    "slug": "pic-3",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/portada-mf_xvmerk.jpg"
+    "name": "Moni",
+    "slug": "moni",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/moni-session/portada-mf_xvmerk.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/moni-session/portada-mf_xvmerk.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639032/monicavo-portfolio/moni-session/Moni_Flores_A1_kvkay2.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639034/monicavo-portfolio/moni-session/Moni_Flores_A2_iqpmlm.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639030/monicavo-portfolio/moni-session/Moni_Fine_Art_Pacho_1_kzlokm.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639030/monicavo-portfolio/moni-session/Moni_Fine_Art_Pacho_4_wftddf.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639030/monicavo-portfolio/moni-session/Moni_Fine_Art_Pacho_2_patf2l.jpg"
+    ]
   },
   {
-    "slug": "pic-4",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945535/monicavo-portfolio/portada-op_ycqmxy.jpg"
+    "name": "Opalo",
+    "slug": "opalo",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945535/monicavo-portfolio/opalo-session/portada-op_ycqmxy.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1719945535/monicavo-portfolio/opalo-session/portada-op_ycqmxy.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639388/monicavo-portfolio/opalo-session/Novia_Opalo_1_dwl8vv.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639389/monicavo-portfolio/opalo-session/Novia_Opalo_2_npsyr6.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639390/monicavo-portfolio/opalo-session/Novia_Opalo_3_i3b2hg.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639390/monicavo-portfolio/opalo-session/Novia_Opalo_4_kyorbk.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639391/monicavo-portfolio/opalo-session/Novia_Opalo_6_xf4xlx.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639392/monicavo-portfolio/opalo-session/Novia_Opalo_7_vv5yym.jpg"
+    ]
+  },
+  {
+    "name": "Siempreviva",
+    "slug": "siempreviva",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Portada_jct29c.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Portada_jct29c.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640996/monicavo-portfolio/siempreviva-session/Siempreviva_E_umam4j.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640997/monicavo-portfolio/siempreviva-session/Siempreviva_E1_gmourn.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Siempreviva_E2_tvcmuf.jpg"
+    ]
   }
 ]
