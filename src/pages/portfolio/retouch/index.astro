@@ -26,14 +26,14 @@ import data from '../../../data/retouch.json';
 
 <style lang='scss'>
 	.hover.imgContainer img {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+	.hover.imgContainer:hover img {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		-webkit-transition: 0.3s ease-in-out;
 		transition: 0.3s ease-in-out;
-	}
-	.hover.imgContainer:hover img {
-		-webkit-filter: grayscale(0);
-		filter: grayscale(0);
 	}
 </style>
 
