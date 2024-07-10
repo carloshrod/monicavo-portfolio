@@ -2,7 +2,7 @@
 const { path } = Astro.props;
 ---
 
-<a {...Astro.props} href={path}>
+<a {...Astro.props} href={path} aria-label='Go back'>
 	<svg
 		class='w-6 h-6 text-stone-950'
 		aria-hidden='true'
