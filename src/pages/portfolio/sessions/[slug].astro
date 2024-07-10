@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Layout from '../../../layouts/Layout.astro';
 import GoBack from '../../../components/GoBack.astro';
-import sessions from '../../../../sessions.json';
+import sessions from '../../../data/sessions.json';
 
 export function getStaticPaths() {
 	return sessions.map(session => ({
