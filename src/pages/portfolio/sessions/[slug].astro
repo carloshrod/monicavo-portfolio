@@ -18,26 +18,24 @@ const { session, pics } = Astro.props;
 	<section class='mt-[140px] max-w-5xl mx-auto pb-10'>
 		<div class='relative flex justify-center items-center'>
 			<GoBack
-				class='absolute left-1 h-8 w-8 p-1 bg-stone-200 rounded-full'
+				class='absolute left-4 h-8 w-8 p-1 bg-stone-200 rounded-full'
 				path='/portfolio/sessions'
 			/>
 			<h2 class='text-center'>
 				<span class='border-b border-b-4 border-[#040404]'>{session}</span>
 			</h2>
 		</div>
-		<div class='grid grid-cols-2 auto-rows-auto mt-4'>
+		<div class='flex flex-wrap mt-4'>
 			{
 				pics?.map((item, index) => (
 					<>
-						{index % 2 === 0 && <div />}
 						<Image
-							class='w-full object-cover'
+							class='w-full object-cover sm:w-1/2 p-1'
 							id='dynamicLoading'
 							src={item}
 							inferSize={true}
 							alt={`${session} ${index}`}
 						/>
-						{index % 2 !== 0 && <div />}
 					</>
 				))
 			}
