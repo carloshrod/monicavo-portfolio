@@ -1,43 +1,22 @@
 ---
-import { Image } from 'astro:assets';
+import ToggleNavMenu from './client/ToggleNavMenu';
+import NavLinks from './client/NavLinks';
+import Drawer from './client/Drawer';
+import Logo from './Logo.astro';
 ---
 
 <header class='fixed top-0 left-0 w-full z-10'>
 	<nav
 		class='h-[140px] max-w-5xl mx-auto flex justify-between items-center px-6'
 	>
-		<a href='/'>
-			<Image
-				src='/monicavo-logo.png'
-				width='162'
-				height='100'
-				loading='eager'
-				alt='Logo Mónica Juvaror'
+		<Logo />
+		<div class='flex max-md:flex-col gap-x-8 gap-y-4'>
+			<ToggleNavMenu client:load />
+			<NavLinks
+				className='flex max-md:flex-col gap-y-2 gap-x-8 max-md:hidden'
 			/>
-		</a>
-		<div class='flex flex-col gap-2 min-[500px]:flex-row min-[500px]:gap-8'>
-			<a
-				href='/portfolio/sessions'
-				class='relative inline-block max-[399px]:text-right group'
-			>
-				<span class='invisible font-bold block'>PORTFOLIO</span>
-				<span
-					class='absolute inset-0 font-semibold group-hover:font-bold transition-all duration-200 block'
-					>PORTFOLIO</span
-				>
-			</a>
-			<a
-				href='/about-me'
-				class='relative inline-block max-[399px]:text-right group'
-			>
-				<span class='invisible font-bold block'>ABOUT ME</span>
-				<span
-					class='absolute inset-0 font-semibold group-hover:font-bold transition-all duration-200 block'
-					>ABOUT ME</span
-				>
-			</a>
 			<span
-				class='relative inline-block max-[399px]:text-right cursor-pointer group'
+				class='relative inline-block cursor-pointer group border border-2 border-stone-950 px-4 text-center rounded'
 			>
 				<span class='invisible font-bold block'>CONTACT</span>
 				<span
@@ -47,4 +26,7 @@ import { Image } from 'astro:assets';
 			</span>
 		</div>
 	</nav>
+	<Drawer client:load>
+		<Logo />
+	</Drawer>
 </header>
