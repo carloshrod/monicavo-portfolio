@@ -9,10 +9,10 @@ import data from '../data/sessions.json';
 	</h1>
 	<div class='flex flex-wrap'>
 		{
-			data.slice(0, 4).map(item => (
+			data.slice(0, 3).map(item => (
 				<a
 					href={`/portfolio/sessions/${item.slug}`}
-					class='hover imgContainer w-full md:w-1/2 p-1 cursor-pointer'
+					class='hover imgContainer w-full md:w-1/3 p-1 cursor-pointer'
 				>
 					<Image
 						class='w-full object-cover'

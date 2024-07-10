@@ -30,9 +30,11 @@ const { retouch, pics } = Astro.props;
 				pics?.map((item, index) => (
 					<>
 						<div class='relative sm:w-1/2'>
-							<span class='absolute bottom-4 right-6 z-50 text-xl font-medium'>
-								{index % 2 === 0 ? 'Before' : 'After'}
-							</span>
+							<div class='absolute bottom-0 right-0 badge'>
+								<span class='px-2 font-bold'>
+									{index % 2 === 0 ? 'Before' : 'After'}
+								</span>
+							</div>
 							<Image
 								class='w-full object-cover'
 								src={item}
@@ -49,8 +51,9 @@ const { retouch, pics } = Astro.props;
 </Layout>
 
 <style lang='scss'>
-	span {
+	.badge {
 		font-family: 'EB Garamond Variable';
-		text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.5);
+		border-top-left-radius: 4px;
 	}
 </style>
