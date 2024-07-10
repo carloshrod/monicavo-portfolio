@@ -30,11 +30,9 @@ const { retouch, pics } = Astro.props;
 				pics?.map((item, index) => (
 					<>
 						<div class='relative sm:w-1/2'>
-							<div class='absolute bottom-0 right-0 badge'>
-								<span class='px-2 font-bold'>
-									{index % 2 === 0 ? 'Before' : 'After'}
-								</span>
-							</div>
+							<span class='badge absolute bottom-0 right-0 px-2 font-bold z-10'>
+								{index % 2 === 0 ? 'Before' : 'After'}
+							</span>
 							<Image
 								class='w-full object-cover'
 								src={item}
