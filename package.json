@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/react": "^3.6.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@emailjs/browser": "^4.4.1",
     "@fontsource-variable/eb-garamond": "^5.0.19",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@nanostores/react": "^0.7.2",

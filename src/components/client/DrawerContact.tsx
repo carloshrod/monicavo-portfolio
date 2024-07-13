@@ -22,7 +22,7 @@ const DrawerContact = ({ children }: { children: ReactNode }) => {
 			onClick={handleCloseNavMenu}
 		>
 			<nav
-				className={`absolute end-0 w-[320px] h-screen pt-[20px] flex flex-col items-center bg-stone-100 rounded transition-transform duration-500 ${navClass}`}
+				className={`absolute end-0 w-screen max-w-[500px] h-screen pt-[20px] pb-6 flex flex-col items-center bg-stone-100 rounded overflow-auto transition-transform duration-500 ${navClass}`}
 				id='menu'
 			>
 				<ButtonClose

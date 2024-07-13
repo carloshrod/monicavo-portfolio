@@ -29,41 +29,48 @@ const { title } = Astro.props;
 			<slot />
 		</main>
 		<Footer />
-	</body><style is:global>
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-		html {
-			font-family: 'Montserrat Variable', system-ui, sans-serif;
-			color: #040404;
-			font-size: 14px;
 
-			@media (min-width: 500px) {
-				font-size: 16px;
+		<style is:global>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
 			}
-		}
+			html {
+				font-family: 'Montserrat Variable', system-ui, sans-serif;
+				color: #040404;
+				font-size: 14px;
 
-		main {
-			min-height: 100vh;
-			margin: auto;
-			line-height: 1.6;
-		}
-		h1,
-		h2,
-		h3 {
-			font-family: 'EB Garamond Variable', serif;
-		}
-		h1 {
-			font-size: 70px;
-		}
-		h2 {
-			font-size: 50px;
-		}
+				@media (min-width: 500px) {
+					font-size: 16px;
+				}
+			}
 
-		h3 {
-			font-size: 40px;
-		}
-	</style>
+			main {
+				min-height: 100vh;
+				margin: auto;
+				line-height: 1.6;
+			}
+			h1,
+			h2,
+			h3 {
+				font-family: 'EB Garamond Variable', serif;
+			}
+			h1 {
+				font-size: 70px;
+			}
+			h2 {
+				font-size: 50px;
+			}
+
+			h3 {
+				font-size: 40px;
+			}
+
+			input,
+			textarea {
+				font-family: 'Montserrat Variable', system-ui, sans-serif;
+			}
+		</style>
+	</body>
 </html>
