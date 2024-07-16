@@ -14,7 +14,10 @@ export function getStaticPaths() {
 const { session, pics } = Astro.props;
 ---
 
-<Layout title={`${session} Session`}>
+<Layout
+	title={`${session} Session - MÓNICA JUVAROR`}
+	description=`Dive into the ${session} session by Monica Juvaror. Experience the creativity and technical prowess behind each captivating image. Contact Monica for photography session bookings, retouch services and inquiries.`
+>
 	<section class='mt-[140px] max-w-5xl mx-auto pb-10'>
 		<div class='relative flex justify-center items-center'>
 			<GoBack

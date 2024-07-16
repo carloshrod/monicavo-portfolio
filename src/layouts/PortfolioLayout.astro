@@ -3,13 +3,14 @@ import Layout from '../layouts/Layout.astro';
 
 interface Props {
 	title: string;
+	description: string;
 	slug: string;
 }
 
-const { title, slug } = Astro.props;
+const { title, description, slug } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
 	<section class='pt-[140px] pb-10 max-w-5xl mx-auto'>
 		<h1 class='text-center' transition:animate='slide'>
 			<span class='border-b border-b-4 border-[#040404]'>Portfolio</span>
