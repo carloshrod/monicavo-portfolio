@@ -1,13 +1,46 @@
 [
   {
-    "name": "Esra",
-    "slug": "esra",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/portada-es_zctnwr.jpg",
+    "name": "Baby Metal",
+    "slug": "baby-metal",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-portada_v4r8zk.jpg",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/portada-es_zctnwr.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-101_whknvw.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-104_zz8swt.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-105_iojtjr.jpg"
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-portada_v4r8zk.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665340/monicavo-portfolio/baby-metal-session/baby-metal-1_ywmpth.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665340/monicavo-portfolio/baby-metal-session/baby-metal-2_v38e75.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-3_l8elgc.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-5_efoed7.jpg"
+    ]
+  },
+  {
+    "name": "Bogotá",
+    "slug": "bogota",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1723664505/monicavo-portfolio/bogota-session/bogota-portada_bkqkjw.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1723664505/monicavo-portfolio/bogota-session/bogota-portada_bkqkjw.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723664503/monicavo-portfolio/bogota-session/bogota-1_pmdl8e.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723664504/monicavo-portfolio/bogota-session/bogota-2_zjfpbm.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723664504/monicavo-portfolio/bogota-session/bogota-3_tcexdf.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723664504/monicavo-portfolio/bogota-session/bogota-4_qpab20.jpg"
+    ]
+  },
+  {
+    "name": "Soft Beauty",
+    "slug": "soft-beauty",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1723661201/monicavo-portfolio/soft-beauty-session/soft-beauty-portada_v19x5e.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1723661201/monicavo-portfolio/soft-beauty-session/soft-beauty-portada_v19x5e.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723661201/monicavo-portfolio/soft-beauty-session/soft-beauty-1_zbildl.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723661201/monicavo-portfolio/soft-beauty-session/soft-beauty-3_e9hk9v.jpg"
+    ]
+  },
+  {
+    "name": "Hector",
+    "slug": "hector",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1723660771/monicavo-portfolio/hector-session/hector-portada_dmcqw3.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1723660771/monicavo-portfolio/hector-session/hector-portada_dmcqw3.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723660771/monicavo-portfolio/hector-session/hector-2_xem7nh.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723660770/monicavo-portfolio/hector-session/hector-3_lmktir.jpg"
     ]
   },
   {
@@ -22,15 +55,14 @@
     ]
   },
   {
-    "name": "Moni",
-    "slug": "moni",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/moni-session/portada-mf_xvmerk.jpg",
+    "name": "Esra",
+    "slug": "esra",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/portada-es_zctnwr.jpg",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/moni-session/portada-mf_xvmerk.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720639032/monicavo-portfolio/moni-session/Moni_Flores_A1_kvkay2.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720639034/monicavo-portfolio/moni-session/Moni_Flores_A2_iqpmlm.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720639030/monicavo-portfolio/moni-session/Moni_Fine_Art_Pacho_1_kzlokm.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720639030/monicavo-portfolio/moni-session/Moni_Fine_Art_Pacho_4_wftddf.jpg"
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/portada-es_zctnwr.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-101_whknvw.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-104_zz8swt.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720637944/monicavo-portfolio/esra-session/esra-105_iojtjr.jpg"
     ]
   },
   {
@@ -45,6 +77,18 @@
       "https://res.cloudinary.com/chrod90/image/upload/v1720639390/monicavo-portfolio/opalo-session/Novia_Opalo_4_kyorbk.jpg",
       "https://res.cloudinary.com/chrod90/image/upload/v1720639391/monicavo-portfolio/opalo-session/Novia_Opalo_6_xf4xlx.jpg",
       "https://res.cloudinary.com/chrod90/image/upload/v1720639392/monicavo-portfolio/opalo-session/Novia_Opalo_7_vv5yym.jpg"
+    ]
+  },
+  {
+    "name": "Moni",
+    "slug": "moni",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/moni-session/portada-mf_xvmerk.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1719945511/monicavo-portfolio/moni-session/portada-mf_xvmerk.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639032/monicavo-portfolio/moni-session/Moni_Flores_A1_kvkay2.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639034/monicavo-portfolio/moni-session/Moni_Flores_A2_iqpmlm.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639030/monicavo-portfolio/moni-session/Moni_Fine_Art_Pacho_1_kzlokm.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720639030/monicavo-portfolio/moni-session/Moni_Fine_Art_Pacho_4_wftddf.jpg"
     ]
   },
   {
