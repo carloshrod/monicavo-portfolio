@@ -1,14 +1,13 @@
 [
   {
-    "name": "Baby Metal",
-    "slug": "baby-metal",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-portada_v4r8zk.jpg",
+    "name": "Hard",
+    "slug": "hard",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-portada_v4r8zk.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1723665340/monicavo-portfolio/baby-metal-session/baby-metal-1_ywmpth.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1723665340/monicavo-portfolio/baby-metal-session/baby-metal-2_v38e75.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-3_l8elgc.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-5_efoed7.jpg"
+      "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720638443/monicavo-portfolio/hard-session/Hard_Beauty__jwe1i1.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720638443/monicavo-portfolio/hard-session/Hard_Beauty_2_bngikt.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720638444/monicavo-portfolio/hard-session/Hard_Beauty_3_nc1kdj.jpg"
     ]
   },
   {
@@ -44,14 +43,14 @@
     ]
   },
   {
-    "name": "Hard",
-    "slug": "hard",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
+    "name": "Siempreviva",
+    "slug": "siempreviva",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Portada_jct29c.jpg",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720638443/monicavo-portfolio/hard-session/Hard_Beauty__jwe1i1.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720638443/monicavo-portfolio/hard-session/Hard_Beauty_2_bngikt.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720638444/monicavo-portfolio/hard-session/Hard_Beauty_3_nc1kdj.jpg"
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Portada_jct29c.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640996/monicavo-portfolio/siempreviva-session/Siempreviva_E_umam4j.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640997/monicavo-portfolio/siempreviva-session/Siempreviva_E1_gmourn.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Siempreviva_E2_tvcmuf.jpg"
     ]
   },
   {
@@ -92,14 +91,15 @@
     ]
   },
   {
-    "name": "Siempreviva",
-    "slug": "siempreviva",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Portada_jct29c.jpg",
+    "name": "Baby Metal",
+    "slug": "baby-metal",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-portada_v4r8zk.jpg",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Portada_jct29c.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720640996/monicavo-portfolio/siempreviva-session/Siempreviva_E_umam4j.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720640997/monicavo-portfolio/siempreviva-session/Siempreviva_E1_gmourn.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720640995/monicavo-portfolio/siempreviva-session/Siempreviva_E2_tvcmuf.jpg"
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-portada_v4r8zk.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665340/monicavo-portfolio/baby-metal-session/baby-metal-1_ywmpth.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665340/monicavo-portfolio/baby-metal-session/baby-metal-2_v38e75.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-3_l8elgc.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1723665341/monicavo-portfolio/baby-metal-session/baby-metal-5_efoed7.jpg"
     ]
   }
 ]
