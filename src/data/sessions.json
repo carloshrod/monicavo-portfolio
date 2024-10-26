@@ -1,5 +1,26 @@
 [
   {
+    "name": "Ashley & Jaidyn",
+    "slug": "ashley-jaidyn",
+    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1729967000/monicavo-portfolio/ashley-jaidyn/portada-Ash_Jai_sjdktl.jpg",
+    "pics": [
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967000/monicavo-portfolio/ashley-jaidyn/portada-Ash_Jai_sjdktl.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967011/monicavo-portfolio/ashley-jaidyn/Ashley_1_ifhyc3.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967034/monicavo-portfolio/ashley-jaidyn/Jaidyn_2_clsnga.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967014/monicavo-portfolio/ashley-jaidyn/Ashley_2_rh04fn.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967035/monicavo-portfolio/ashley-jaidyn/Jaidyn_4_vos2ji.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967015/monicavo-portfolio/ashley-jaidyn/Ashley_3_zo1h0b.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967035/monicavo-portfolio/ashley-jaidyn/Jaidyn_5_siysxl.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967023/monicavo-portfolio/ashley-jaidyn/Ash_Jai_2_mpkyj1.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967015/monicavo-portfolio/ashley-jaidyn/Ashley_4_jjgdyg.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967033/monicavo-portfolio/ashley-jaidyn/Jaidyn_6_o10kny.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967015/monicavo-portfolio/ashley-jaidyn/Ashley_5_eijekl.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967036/monicavo-portfolio/ashley-jaidyn/Jaidyn_7_yymd7z.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967015/monicavo-portfolio/ashley-jaidyn/Ashley_6_akl58y.jpg",
+      "https://res.cloudinary.com/chrod90/image/upload/v1729967034/monicavo-portfolio/ashley-jaidyn/Jaidyn_10_urfmxr.jpg"
+    ]
+  },
+  {
     "name": "Hard",
     "slug": "hard",
     "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
