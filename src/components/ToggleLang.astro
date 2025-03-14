@@ -1,0 +1,44 @@
+---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslatedPath } from '../i18n/utils';
+import '/node_modules/flag-icons/css/flag-icons.min.css';
+
+const currentLang = getLangFromUrl(Astro.url) ?? '';
+const { pathname } = Astro.url;
+
+const translatedPath = useTranslatedPath(currentLang as keyof typeof languages);
+---
+
+<div class='flex flex-row items-center justify-end'>
+	{
+		Object.entries(languages).map(([lang, label], i) => {
+			const flag = lang === 'es' ? lang : 'gb';
+
+			return (
+				<a
+					href={translatedPath(pathname.slice(3), lang)}
+					class={`h-6 w-8 flex flex-row gap-1 justify-center items-center text-sm font-medium border border-stone-950 ${i === 0 ? 'rounded-l-lg' : 'rounded-r-lg'} flagContainer`}
+					aria-label={label}
+					style={{ pointerEvents: currentLang === lang ? 'none' : 'auto' }}
+				>
+					<span
+						class={`fi fi-${flag} fis`}
+						style={{
+							filter:
+								currentLang === lang ? 'grayscale(0%)' : 'grayscale(100%)',
+						}}
+					/>
+				</a>
+			);
+		})
+	}
+</div>
+
+<style lang='scss'>
+	.flagContainer:hover span {
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%) !important;
+		-webkit-transition: 0.2s ease-in-out;
+		transition: 0.2s ease-in-out;
+	}
+</style>

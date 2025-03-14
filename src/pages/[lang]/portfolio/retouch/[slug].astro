@@ -1,0 +1,82 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../../../layouts/Layout.astro';
+import GoBack from '../../../../components/GoBack.astro';
+import data from '../../../../data/retouch.json';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { useTranslations } from '../../../../i18n/utils';
+import type { languages } from '../../../../i18n/ui';
+
+const currentLang = Astro.currentLocale || 'es';
+
+export function getStaticPaths() {
+	return data.flatMap(item =>
+		['es', 'en'].map(lang => ({
+			params: { lang, slug: item.slug },
+			props: { retouch: item?.name, pics: item?.pics },
+		}))
+	);
+}
+
+const { retouch, pics } = Astro.props;
+
+const translateLabels = useTranslations(currentLang as keyof typeof languages);
+
+const title = translateLabels('meta.retouches.title') as string;
+const description = translateLabels(
+	'meta.retouch.description',
+	retouch
+) as string;
+const before = translateLabels('retouch.before');
+const after = translateLabels('retouch.after');
+
+export const prerender = true;
+---
+
+<Layout
+	title={`${title.replace('s', '')}: ${retouch} - MÓNICA JUVAROR`}
+	description={description}
+>
+	<section class='mt-[140px] max-w-5xl mx-auto pb-10'>
+		<div class='relative flex justify-center items-center'>
+			<GoBack
+				class='absolute left-4 h-8 w-8 p-1 bg-stone-200 rounded-full'
+				path={getRelativeLocaleUrl(currentLang, '/portfolio/retouch')}
+			/>
+			<h2 class='text-center' transition:animate='slide'>
+				<span class='border-b-4 border-[#040404]'>{retouch}</span>
+			</h2>
+		</div>
+		<div class='flex flex-col mt-4 px-1 sm:flex-row'>
+			{
+				pics?.map((item, index) => (
+					<>
+						<div class='relative sm:w-1/2'>
+							<span class='badge absolute bottom-0 right-0 px-2 font-bold z-10'>
+								{index % 2 === 0 ? before : after}
+							</span>
+							<Image
+								class='w-full object-cover'
+								id='dynamicLoading'
+								src={item}
+								inferSize={true}
+								alt={`${retouch} ${index}`}
+								transition:animate='slide'
+							/>
+						</div>
+					</>
+				))
+			}
+		</div>
+	</section>
+</Layout>
+
+<script src='/src/utils/dynamicLoading.ts'></script>
+
+<style lang='scss'>
+	.badge {
+		font-family: 'EB Garamond Variable';
+		background-color: rgba(255, 255, 255, 0.5);
+		border-top-left-radius: 4px;
+	}
+</style>

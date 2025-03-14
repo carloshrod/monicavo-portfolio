@@ -1,41 +1,49 @@
 ---
 import { Image } from 'astro:assets';
+import { useTranslations } from '../i18n/utils';
+import type { languages } from '../i18n/ui';
+
+const currentLang = Astro.currentLocale || 'es';
+
+const translateLabels = useTranslations(currentLang as keyof typeof languages);
+
+const rights = translateLabels('footer.rights');
+const devBy = translateLabels('footer.devBy');
 ---
 
 <footer
 	class='h-[120px] max-w-5xl flex flex-col justify-center mx-auto px-4 font-semibold'
 >
 	<section class='w-full flex justify-between items-center gap-4'>
-		<span
-			>©{new Date().getFullYear()} MÓNICA JUVAROR | All Rights Reserved</span
-		>
+		<span>©{new Date().getFullYear()} MÓNICA JUVAROR | {rights}</span>
 		<a
 			class='relative block w-9 h-9'
 			href='https://www.instagram.com/monicajuvaror/'
 			target='_blank'
 			rel='noopener noreferrer'
+			aria-label='Link to Instagram'
 		>
 			<Image
 				class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 hover:opacity-0'
 				src='/icons/instagram-bw.svg'
 				width='36'
 				height='36'
-				loading='eager'
+				loading='lazy'
 				alt='Instagram icon'
 			/>
 			<Image
 				src='/icons/instagram-color.svg'
 				width='36'
 				height='36'
-				loading='eager'
 				alt='Instagram icon'
 				class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 hover:opacity-100'
+				loading='lazy'
 			/>
 		</a>
 	</section>
 	<div class='w-full border border-t-stone-400 my-4'></div>
 	<section class='sign flex flex-row justify-center gap-1 text-xs'>
-		Developed with 💚 by
+		{devBy}
 		<a
 			href='https://github.com/carloshrod'
 			target='_blank'

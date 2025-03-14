@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+import PortfolioLayout from '../../../../layouts/PortfolioLayout.astro';
+import data from '../../../../data/sessions.json';
+import { useTranslations } from '../../../../i18n/utils';
+import type { languages } from '../../../../i18n/ui';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const currentLang = Astro.currentLocale || 'es';
+
+const translateLabels = useTranslations(currentLang as keyof typeof languages);
+
+const title = translateLabels('meta.sessions.title');
+const description = translateLabels('meta.sessions.description') as string;
+---
+
+<PortfolioLayout
+	title=`MÓNICA JUVAROR - ${title}`
+	description={description}
+	slug='sessions'
+>
+	{
+		data.map(item => (
+			<a
+				href={getRelativeLocaleUrl(
+					currentLang,
+					`/portfolio/sessions/${item.slug}`
+				)}
+				class='imgContainer w-full sm:w-1/2 lg:w-1/4 p-1 cursor-pointer'
+				transition:animate='slide'
+				aria-label={`Go to ${item.name} session`}
+			>
+				<Image
+					class='w-full object-cover'
+					id='dynamicLoading'
+					src={item.cover}
+					inferSize={true}
+					alt={item.slug}
+				/>
+			</a>
+		))
+	}
+</PortfolioLayout>
+
+<style lang='scss'>
+	.imgContainer img {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+	.imgContainer:hover img {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		-webkit-transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
+	}
+</style>
+
+<script src='/src/utils/dynamicLoading.ts'></script>

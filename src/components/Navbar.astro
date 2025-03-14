@@ -6,6 +6,17 @@ import ToggleContact from './client/ToggleContact';
 import DrawerNavMenu from './client/DrawerNavMenu';
 import DrawerContact from './client/DrawerContact';
 import Contact from './Contact.astro';
+import { useTranslations } from '../i18n/utils';
+import type { languages } from '../i18n/ui';
+import ToggleLang from './ToggleLang.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const currentLang = Astro.currentLocale || 'es';
+
+const translateLabels = useTranslations(currentLang as keyof typeof languages);
+
+const linkLabels = translateLabels('navbar.linkLabels');
+const btnLabel = translateLabels('navbar.btnLabel');
 ---
 
 <header class='fixed top-0 left-0 w-full z-10'>
@@ -17,13 +28,22 @@ import Contact from './Contact.astro';
 			<ToggleNavMenu client:load />
 			<NavLinks
 				className='flex max-md:flex-col gap-y-2 gap-x-8 max-md:hidden'
+				linkLabels={linkLabels as string[]}
+				currentLang={currentLang}
+				getRelativeLocaleUrl={getRelativeLocaleUrl}
 			/>
-			<ToggleContact client:load />
+			<ToggleContact client:load btnLabel={btnLabel as string} />
+			<ToggleLang />
 		</div>
 	</nav>
 	<DrawerNavMenu client:load>
 		<Logo />
-		<NavLinks className='flex flex-col gap-8 mt-12' />
+		<NavLinks
+			className='flex flex-col gap-8 mt-12'
+			linkLabels={linkLabels as string[]}
+			currentLang={currentLang}
+			getRelativeLocaleUrl={getRelativeLocaleUrl}
+		/>
 	</DrawerNavMenu>
 	<DrawerContact client:load>
 		<Logo />

@@ -1,5 +1,10 @@
 ---
+import { useTranslations } from '../i18n/utils';
+import type { languages } from '../i18n/ui';
 import Layout from '../layouts/Layout.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const currentLang = Astro.currentLocale || 'es';
 
 interface Props {
 	title: string;
@@ -8,23 +13,29 @@ interface Props {
 }
 
 const { title, description, slug } = Astro.props;
+
+const translateLabels = useTranslations(currentLang as keyof typeof languages);
+
+const portfolioLayoutTitle = translateLabels('portfolio.layoutTitle');
+const subtitle1 = translateLabels('portfolio.subtitle1');
+const subtitle2 = translateLabels('portfolio.subtitle2');
 ---
 
 <Layout title={title} description={description}>
 	<section class='pt-[140px] pb-10 max-w-5xl mx-auto'>
 		<h1 class='text-center' transition:animate='slide'>
-			<span class='border-b border-b-4 border-[#040404]'>Portfolio</span>
+			<span class='border-b-4 border-[#040404]'>{portfolioLayoutTitle}</span>
 		</h1>
 		<div class='w-[240px] flex mx-auto text-center'>
 			<a
-				href='/portfolio/sessions'
+				href={getRelativeLocaleUrl(currentLang, '/portfolio/sessions')}
 				class={`flex-1 border-r border-1 border-[#040404] font-medium ${slug === 'sessions' ? 'font-semibold bg-stone-200' : ''} hover:font-semibold`}
-				>Sessions</a
+				>{subtitle1}</a
 			>
 			<a
-				href='/portfolio/retouch'
+				href={getRelativeLocaleUrl(currentLang, '/portfolio/retouch')}
 				class={`flex-1 border-l border-1 border-[#040404] font-medium ${slug === 'retouch' ? 'font-semibold bg-stone-200' : ''} hover:font-semibold`}
-				>Retouch</a
+				>{subtitle2}</a
 			>
 		</div>
 		<div class='flex flex-wrap mt-2'>

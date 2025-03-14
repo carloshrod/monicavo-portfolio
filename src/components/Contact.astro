@@ -1,20 +1,30 @@
 ---
 import { Image } from 'astro:assets';
 import ContactForm from './client/ContactForm';
+import { useTranslations } from '../i18n/utils';
+import type { languages } from '../i18n/ui';
+
+const currentLang = Astro.currentLocale || 'es';
+
+const translateLabels = useTranslations(currentLang as keyof typeof languages);
+
+const title = translateLabels('contact.title');
+const description = translateLabels('contact.description');
 ---
 
 <section class='w-full flex flex-col items-center gap-4 mt-4 px-8'>
 	<h3>
-		<span class='border-b border-b-4 border-[#040404]'> Contact </span>
+		<span class='border-b-4 border-[#040404]'>{title}</span>
 	</h3>
 	<p class='w-[90%]'>
-		If you would like me to work on your photography project, please fill out
-		the contact form below and I will get back to you as soon as possible:
+		{description}
 	</p>
-	<ContactForm client:load />
+	<ContactForm client:load currentLang={currentLang} />
 	<div class='w-full border border-t-stone-400 my-4'></div>
 	<a href='tel:+15126509087' class='block text-sm'>
-		<span class='font-semibold'>Phone:</span> +1 (512) 650-9087
+		<span class='font-semibold'
+			>{currentLang === 'es' ? 'Teléfono' : 'Phone'}:</span
+		> +34 664 41 19 17
 	</a>
 	<a href='mailto:monica@monicajuvaror.com' class='block text-sm'
 		><span class='font-semibold'>Email:</span> monica@monicajuvaror.com</a
@@ -29,13 +39,14 @@ import ContactForm from './client/ContactForm';
 			alt='Instagram icon'
 		/>
 
-		<span>Dallas, Texas - USA</span>
+		<span>Almería, España</span>
 	</div>
 	<a
 		class='relative block w-9 h-9'
 		href='https://www.instagram.com/monicajuvaror/'
 		target='_blank'
 		rel='noopener noreferrer'
+		aria-label='Link to Instagram'
 	>
 		<Image
 			class='absolute inset-0 w-full h-full transition-opacity duration-300 opacity-100 hover:opacity-0'

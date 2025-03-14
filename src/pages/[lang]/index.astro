@@ -1,0 +1,25 @@
+---
+import Hero from '../../components/Hero.astro';
+import PortfolioPreview from '../../components/PortfolioPreview.astro';
+import type { languages } from '../../i18n/ui';
+import { useTranslations } from '../../i18n/utils';
+import Layout from '../../layouts/Layout.astro';
+
+const currentLang = Astro.currentLocale || 'es';
+
+const translateLabels = useTranslations(currentLang as keyof typeof languages);
+
+const homeTitle = translateLabels('home.title');
+const anchorLabel = translateLabels('home.anchorLabel');
+const title = translateLabels('meta.home.title');
+const description = translateLabels('meta.home.description') as string;
+---
+
+<Layout title=`MÓNICA JUVAROR - ${title}` description={description}>
+	<Hero />
+	<PortfolioPreview
+		currentLang={currentLang}
+		homeTitle={homeTitle}
+		anchorLabel={anchorLabel}
+	/>
+</Layout>
