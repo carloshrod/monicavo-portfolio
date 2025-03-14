@@ -13,11 +13,7 @@ export default defineConfig({
 		},
 	},
 	output: 'server',
-	adapter: netlify(),
-	image: {
-		service: {
-			name: 'cloudinary',
-			baseURL: 'https://res.cloudinary.com/',
-		},
-	},
+	adapter: netlify({
+		imageCDN: false,
+	}),
 });
