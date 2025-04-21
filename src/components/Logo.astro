@@ -1,8 +1,11 @@
 ---
 import { Image } from 'astro:assets';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const { lang } = Astro.params;
 ---
 
-<a href='/' aria-label='Go Home'>
+<a href={getRelativeLocaleUrl(lang as string, '/')} aria-label='Go Home'>
 	<Image
 		class='max-[500px]:max-w-[120px]'
 		src='/monicavo-logo.png'
