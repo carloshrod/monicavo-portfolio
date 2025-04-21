@@ -2,28 +2,28 @@
   {
     "name": "Esra",
     "slug": "esra",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1726842448/monicavo-portfolio/esra-session/esra-01-portada_che9np.jpg",
+    "cover": "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/esra/esra-01-portada.jpg?updatedAt=1745252635884",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1720377989/monicavo-portfolio/esra-before_s9a1vc.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720377989/monicavo-portfolio/esra-after_vchxtv.jpg"
+      "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/esra/esra-before.jpg?updatedAt=1745253810118",
+      "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/esra/esra-after.jpg?updatedAt=1745253810078"
     ]
   },
   {
     "name": "Hard",
     "slug": "hard",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1719945482/monicavo-portfolio/hard-session/portada-hs_v4imrk.jpg",
+    "cover": "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/hard/portada-hs.jpg?updatedAt=1745251929597",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1720377990/monicavo-portfolio/hard-before_sylpke.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720377989/monicavo-portfolio/hard-after_agfsdx.jpg"
+      "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/hard/hard-before.jpg?updatedAt=1745253949194",
+      "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/hard/hard-after.jpg?updatedAt=1745253949372"
     ]
   },
   {
     "name": "Siempreviva",
     "slug": "siempreviva",
-    "cover": "https://res.cloudinary.com/chrod90/image/upload/v1720377989/monicavo-portfolio/siempreviva-after_tsgir9.jpg",
+    "cover": "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/siempreviva/Portada.jpg?updatedAt=1745252464164",
     "pics": [
-      "https://res.cloudinary.com/chrod90/image/upload/v1720377989/monicavo-portfolio/siempreviva-before_gxwffl.jpg",
-      "https://res.cloudinary.com/chrod90/image/upload/v1720377989/monicavo-portfolio/siempreviva-after_tsgir9.jpg"
+      "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/siempreviva/siempreviva-before.jpg?updatedAt=1745254013869",
+      "https://ik.imagekit.io/7spt3tfxu/MonicaJuvaror/siempreviva/siempreviva-after.jpg?updatedAt=1745254013382"
     ]
   }
 ]
